@@ -7,7 +7,7 @@ synth = speechSynthesis;
 
 function quoteGen(){
     
-    fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
+    fetch('https://dummyjson.com/quotes/random').then(response => response.json()).then(result => {
         quote.innerText = result.content;
         author.innerText = `~ ${result.author}`;
     });
