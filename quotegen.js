@@ -8,7 +8,7 @@ synth = speechSynthesis;
 function quoteGen(){
     
     fetch('https://dummyjson.com/quotes/random').then(response => response.json()).then(result => {
-        quote.innerText = result.content;
+        quote.innerText = result.quote;
         author.innerText = `~ ${result.author}`;
     });
 }
